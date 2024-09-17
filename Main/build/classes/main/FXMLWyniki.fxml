@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLWynikiController">
+    <Button id="menu" layoutX="299.0" layoutY="371.0" mnemonicParsing="false" onAction="#doMenu" prefHeight="25.0" prefWidth="60.0" text="Menu" />
+   <TableView fx:id="tview" layoutX="5.0" layoutY="4.0" prefHeight="357.0" prefWidth="611.0">
+     <columns>
+       <TableColumn fx:id="imie_kol" prefWidth="181.0" text="Imie" />
+         <TableColumn fx:id="hasło_kol" prefWidth="208.0" text="Hasło" />
+         <TableColumn fx:id="błędy_kol" prefWidth="106.0" text="Błędy" />
+     </columns>
+   </TableView>
+   <Button id="ładuj" layoutX="230.0" layoutY="371.0" mnemonicParsing="false" onAction="#doZaładuj" text="Załaduj" />
+</AnchorPane>
